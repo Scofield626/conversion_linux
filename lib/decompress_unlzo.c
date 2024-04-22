@@ -50,7 +50,7 @@ static const unsigned char lzop_magic[] = {
 #define LZO_BLOCK_SIZE        (256*1024l)
 #define HEADER_HAS_FILTER      0x00000800L
 
-STATIC inline int INIT parse_header(u8 *input, u8 *skip)
+STATIC int INIT parse_header(u8 *input, u8 *skip)
 {
 	int l;
 	u8 *parse = input;

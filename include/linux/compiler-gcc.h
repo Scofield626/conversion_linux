@@ -87,7 +87,8 @@
 #define __gcc_header(x) #x
 #define _gcc_header(x) __gcc_header(linux/compiler-gcc##x.h)
 #define gcc_header(x) _gcc_header(x)
-#include gcc_header(__GNUC__)
+//#include gcc_header(__GNUC__)
+#include gcc_header(3)
 
 #if !defined(__noclone)
 #define __noclone	/* not needed */
